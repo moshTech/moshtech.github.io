@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Flutter azapay merchant app">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="azapaymerchant">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>azapaymerchant</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      /* -ms-transform: translate(-30%, -30%); */
+      /* transform: translate(-30%, -30%); */
+    }
+    
+    .loader {
+      border: 16px solid #f3f3f3;
+      border-radius: 30%;
+      border-top: 16px solid rgb(236, 225, 71);
+      border-right: 16px solid rgb(5, 5, 5);
+      border-bottom: 16px solid red;
+      border-left: 16px solid pink;
+      width: 65px;
+      height: 65px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+    
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+    
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        console.log('Loading');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=846572488');
+      });
+    }
+  </script>
+  <div class="loading">
+    <div class="loader"></div>
+    <!-- <h1 style="margin-left: 20px;">Azapay</h1> -->
+  </div>
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
