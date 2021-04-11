@@ -36139,7 +36139,7 @@ Y.SB.prototype={
 $0:function(){return Y.asN($.aH(),"/login",t.z)},
 $S:67}
 K.kA.prototype={
-H:function(a7,a8){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3=null,a4=P.bT(0,0,5),a5=P.bT(0,100,0),a6=t.Yw
+H:function(a7,a8){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3=null,a4=P.bT(0,0,3),a5=P.bT(0,50,0),a6=t.Yw
 a6=P.aL(new H.aQ(H.a(["assets/images/login_background1.png","assets/images/login_background2.jpg","assets/images/login_background3.png"],t.s),new K.Yf(),a6),!0,a6.j("bj.E"))
 s=a6.length
 r=$.S
