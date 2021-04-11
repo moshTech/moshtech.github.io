@@ -36139,9 +36139,9 @@ Y.SB.prototype={
 $0:function(){return Y.asN($.aH(),"/login",t.z)},
 $S:67}
 K.kA.prototype={
-H:function(a9,b0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3=null,a4="assets/images/login_background1.png",a5="assets/images/login_background3.png",a6=P.bT(0,0,5),a7=P.bT(0,100,0),a8=t.Yw
-a8=P.aL(new H.aQ(H.a([a4,a5,a4,a5],t.s),new K.Yf(),a8),!0,a8.j("bj.E"))
-s=a8.length
+H:function(a7,a8){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3=null,a4=P.bT(0,0,5),a5=P.bT(0,100,0),a6=t.Yw
+a6=P.aL(new H.aQ(H.a(["assets/images/login_background1.png","assets/images/login_background2.jpg","assets/images/login_background3.png"],t.s),new K.Yf(),a6),!0,a6.j("bj.E"))
+s=a6.length
 r=$.S
 q=K.a8(30)
 p=U.eV("assets/images/azalogo.png",a3,a3,a3,100,150)
@@ -36165,7 +36165,7 @@ a=U.jg(d,"Sign In",45,new K.Yh(),C.m,14,C.A,250)
 a0=T.P(a3,25,a3)
 a1=B.X(a3,a3,A.R(a3,a3,a3,a3,a3,a3,a3,a3,a3,a3,a3,13,a3,C.w,a3,a3,!0,a3,a3,a3,a3,a3,a3))
 a2=t.p
-return M.wT(a3,M.N(a3,T.fI(C.ba,H.a([new O.tI(new B.Rt(1/0,1,!0,a6,a7,new L.vI(a3)),a8,new G.Rs(new P.av(new P.U(r,t.wC),t.Fe)),s,a3),T.fD(27,M.N(a3,V.ov(new T.aR(C.xX,E.nl(T.bg(H.a([p,o,n,m,l,j,i,h,g,k,f,e,b,a,a0,D.hT(a3,T.nc(a3,a3,C.b1,!0,a3,new Q.bZ("Don't have an account? ",H.a([new Q.bZ("  Sign Up",a3,B.X(a3,a3,A.R(a3,a3,d,a3,a3,a3,a3,a3,a3,a3,a3,13,a3,C.w,a3,a3,!0,a3,a3,a3,a3,a3,a3)))],c),a1),C.ah,a3,a3,1,C.ak),C.Z,!1,a3,a3,a3,a3,a3,a3,a3,a3,a3,a3,a3,new K.Yi(),a3,a3,a3,a3,a3,a3)],a2),C.t,C.b3,C.v),a3,C.Z,a3,a3,C.n),a3),C.k,a3,a3,new X.cA(q,C.z)),C.h,a3,a3,a3,a3,a3,a3,a3,a3,a3,500),a3,a3,a3,20,27,a3)],a2),C.X,C.ut,a3,a3),C.h,a3,a3,a3,a3,a3,a3,C.ig,a3,a3,a3))}}
+return M.wT(a3,M.N(a3,T.fI(C.ba,H.a([new O.tI(new B.Rt(1/0,1,!0,a4,a5,new L.vI(a3)),a6,new G.Rs(new P.av(new P.U(r,t.wC),t.Fe)),s,a3),T.fD(27,M.N(a3,V.ov(new T.aR(C.xX,E.nl(T.bg(H.a([p,o,n,m,l,j,i,h,g,k,f,e,b,a,a0,D.hT(a3,T.nc(a3,a3,C.b1,!0,a3,new Q.bZ("Don't have an account? ",H.a([new Q.bZ("  Sign Up",a3,B.X(a3,a3,A.R(a3,a3,d,a3,a3,a3,a3,a3,a3,a3,a3,13,a3,C.w,a3,a3,!0,a3,a3,a3,a3,a3,a3)))],c),a1),C.ah,a3,a3,1,C.ak),C.Z,!1,a3,a3,a3,a3,a3,a3,a3,a3,a3,a3,a3,new K.Yi(),a3,a3,a3,a3,a3,a3)],a2),C.t,C.b3,C.v),a3,C.Z,a3,a3,C.n),a3),C.k,a3,a3,new X.cA(q,C.z)),C.h,a3,a3,a3,a3,a3,a3,a3,a3,a3,500),a3,a3,a3,20,27,a3)],a2),C.X,C.ut,a3,a3),C.h,a3,a3,a3,a3,a3,a3,C.ig,a3,a3,a3))}}
 K.Yf.prototype={
 $1:function(a){return new T.e3(new K.Ye(a),null)},
 $S:348}
