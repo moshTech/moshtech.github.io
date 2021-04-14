@@ -29,49 +29,52 @@
   <title>azapaymerchant</title>
   <link rel="manifest" href="manifest.json">
   <style>
-    .loading {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 45%;
-      /* -ms-transform: translate(-30%, -30%); */
-      /* transform: translate(-30%, -30%); */
-    }
+    body {background-color: #212121;}
     
-    .loader {
-      border: 16px solid #f3f3f3;
-      border-radius: 30%;
-      border-top: 16px solid rgb(236, 225, 71);
-      border-right: 16px solid rgb(5, 5, 5);
-      border-bottom: 16px solid red;
-      border-left: 16px solid pink;
-      width: 65px;
-      height: 65px;
-      -webkit-animation: spin 2s linear infinite;
-      animation: spin 2s linear infinite;
-    }
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
     
-    @-webkit-keyframes spin {
-      0% {
-        -webkit-transform: rotate(0deg);
+      .loader {
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border: 15px solid;
+        border-top: 16px solid #FFFFFF;
+        border-right: 16px solid #212121;
+        border-bottom: 16px solid #FFFFFF;
+        border-left: 16px solid #212121;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
       }
-      100% {
-        -webkit-transform: rotate(360deg);
-      }
-    }
     
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
       }
-      100% {
-        transform: rotate(360deg);
+    
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
       }
-    }
-  </style>
+    </style>
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
@@ -81,7 +84,7 @@
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
         console.log('Loading');
-        navigator.serviceWorker.register('flutter_service_worker.js?v=2302343902');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=1766446753');
       });
     }
   </script>
