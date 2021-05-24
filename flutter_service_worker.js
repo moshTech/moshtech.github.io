@@ -4,18 +4,18 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "190e59b58292a5aadc6cfaabe9337618",
-"index.html": "4bd615d81eb2a91635f92ec2292e5f48",
-"/": "4bd615d81eb2a91635f92ec2292e5f48",
-"main.dart.js": "f346ad2f14c598a1013be668e367a7c2",
+"index.html": "136c84281d7be48bc6bf6baaeba47ec3",
+"/": "136c84281d7be48bc6bf6baaeba47ec3",
+"main.dart.js": "ef2daebf51300496727946502b9c0d7b",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "manifest.json": "3e92e585fb04e075fc188374c8245062",
-"assets/AssetManifest.json": "54a04d5871269c9b907e8d3fe7eb54a2",
-"assets/NOTICES": "b155eef7186f16c2bb578c42b9b5cb2a",
+"assets/AssetManifest.json": "4c7fe9b196ea0878a211332f85b1adc0",
+"assets/NOTICES": "1240df118cf46206477e82472ecc1f70",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
+"assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/assets/images/change_trans_pin.png": "5f767c73f69303384437bf99c982c7db",
 "assets/assets/images/dashboard_signup_first.png": "e86aa62d1d700601fd21fdfc32e2f6be",
 "assets/assets/images/hexagon_medium.png": "d4530382449f5325addc01f50570bd51",
@@ -38,6 +38,7 @@ const RESOURCES = {
 "assets/assets/icons/transaction1.png": "21b36a9071209b2f35eb7730492d7ce6",
 "assets/assets/icons/dashboardIcon.png": "75c3b868978a2d7647fd96e0d091096d",
 "assets/assets/icons/transaction.png": "4c83bcf777e1cff9fe30afe7a41466e9",
+"assets/assets/icons/aza_agent_icon.png": "6cafdebec2e74c70937624e4c2a00fca",
 "assets/assets/icons/dashboard.png": "6da69ef49298118678a6de8e074b576d",
 "assets/assets/icons/wallet.png": "8bf1b052be262d4cad25c1c05ecc61ee",
 "assets/assets/icons/settings.png": "0199a6ae66ce34fa1a6440f3f46b3aae",
@@ -48,14 +49,18 @@ const RESOURCES = {
 "assets/assets/icons/not_icon_on.png": "f397a6bbad923954a5e3bd532498ad96",
 "assets/assets/icons/logout.png": "efff0c11f93bdb59b547ac3602e1c577",
 "assets/assets/icons/wallet1.png": "0430a0492f8d91084a1592e5fd5d3dc5",
+"assets/assets/icons/bank_transfer_icon.png": "27a12f0db6c97b70e45adc11610a1827",
 "assets/assets/icons/subagent.png": "98d33d24ffa3300dd91cf723606accc2",
 "assets/assets/icons/subagent1.png": "67e6c52cd066b3f5f25e0f44fa6deb3b",
+"assets/assets/icons/gtb_logo.png": "19e81d5810970c3da1cce580db41d0c9",
 "assets/assets/icons/dashboard1.png": "45b391d7d34b10ea85970ffc289903ca",
 "assets/assets/icons/menu.png": "223d2de7d10f04c83d2e717d98ffbde8",
 "assets/assets/icons/upload.png": "10f4d581293df25fb0fa48428709d578",
+"assets/assets/icons/load_azapay_icon.png": "7bd62152962482481dccdd9fb707104e",
 "assets/assets/icons/qr_code.png": "2994cf99c0d46a2af9742f711a3119da",
 "assets/assets/icons/not_icon.png": "d5890c9a07652a30e11967aa03212798",
-"assets/assets/icons/pro.png": "1a5349b24a1f028e634cf817cffd5edd"
+"assets/assets/icons/pro.png": "1a5349b24a1f028e634cf817cffd5edd",
+"assets/assets/icons/AZApay.svg": "8cec76a6e92f967627f402a1af320f23"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -73,7 +78,7 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
